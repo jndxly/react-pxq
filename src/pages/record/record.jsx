@@ -63,7 +63,7 @@ class Record extends Component {
         </section>
         {/* 子路由在父级配置，react-router4新特性，更加灵活 */}
         <Switch>
-          <Route path={`${this.props.match.path}/:type`} component={RecordList} />
+          <Route path={`${this.props.match.path}/:type1`} component={RecordList} />
           <Redirect from={`${this.props.match.path}`} to={`${this.props.match.path}/passed`} exact component={RecordList} />
         </Switch>
       </main>

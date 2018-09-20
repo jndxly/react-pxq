@@ -31,7 +31,7 @@ export default class PublicHeader extends Component{
 
   render(){
     return(
-      <header className="header-container">
+      <header className={"header-container"}>
         <span className="header-slide-icon icon-catalog" onClick={this.toggleNav}></span>
         <span className="header-title">{this.props.title}</span>
         {

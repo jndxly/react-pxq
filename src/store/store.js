@@ -3,6 +3,7 @@ import * as home from './home/reducer';
 import * as production from './production/reducer';
 import thunk from 'redux-thunk';
 
+let test = home;
 let store = createStore(
   combineReducers({...home, ...production}),
   applyMiddleware(thunk)
